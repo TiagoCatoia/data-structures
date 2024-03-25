@@ -40,6 +40,9 @@ void dequeue(t_queue *p, int remove_index) {
         if (end == remove_index) {
             p->end--;
         }
+        if (start == remove_index {
+            p->start++;
+        }
     }
     else {
         int i;
