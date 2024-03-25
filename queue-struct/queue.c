@@ -37,6 +37,9 @@ int out(t_queue *p, t_elem *x) {
 void dequeue(t_queue *p, int remove_index) {
     if (remove_index == p->n) {
         p->n--;
+        if (end == remove_index) {
+            p->end--;
+        }
     }
     else {
         int i;
